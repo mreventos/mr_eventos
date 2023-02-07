@@ -13,7 +13,7 @@ export const App = () => {
             py-32 items-center flex flex-col gap-2">
 
                 <div className="h-52 w-52 border-white border-2 rounded-full flex justify-center items-center">
-                    <img src={'public/logo-transparent.png'} alt="" />
+                    <img src={'logo-transparent.png'} alt="" />
                 </div>
                 <div className='flex flex-col justify-center items-center my-4 gap-2'>
                     <h1 className='text-white font-bold text-2xl'>
@@ -48,14 +48,14 @@ export const App = () => {
                 </div>
 
                 <div className={`flex m-0 p-0 duration-300 ${showMapa ? 'h-[600px] w-[600px]' : 'h-0 w-0'}`}>
-                    <img src="public/Mapa-Evento.png" alt="" />
+                    <img src="Mapa-Evento.png" alt="" />
                 </div>
 
                 <div onClick={() => { setShowValores(!showValores) }} className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium">
                     <span>Valores e Pontos de vendas - Evoney Fernandes (Seu Osmar)</span>
                 </div>
                 <div className={`flex duration-300 ${showValores ? 'h-[600px] w-[600px]' : 'h-0 w-0'}`}>
-                    <img src="public/valores.jpeg" alt="" />
+                    <img src="valores.jpeg" alt="" />
                 </div>
 
                 <footer className="bottom-0 text-white mb-10 flex flex-col">
