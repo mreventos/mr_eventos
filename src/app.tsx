@@ -13,11 +13,14 @@ export const App = () => {
 
     const MapPopup = (props: any) => {
         return (
-            <div className='fixed max-md:w-[350px] max-md:top-[25%] max-md:left-[10%] w-[750px] h-full top-[10%] left-[15%]'>
-                <div className='relative w-[85%] m-0 h-auto max-h-[85vh] rounded-[4px] border border-solid border-[#999] overflow-auto'>
-                    <span className='cursor-pointer max-md:right-[14%] max-md:top-[26%] fixed right-[17.5%] top-[10.5%] w-[25px] h-[25px] text-white bg-orange-500 rounded-md flex items-center justify-center' onClick={() => { setShowMapa(false) }}>
-                        <MdClose />
-                    </span>
+            <div className='fixed h-[80vh] w-[70vw] flex flex-col'>
+                <div className='flex w-full justify-end'>
+                    <MdClose onClick={() => { setShowMapa(false) }} className='text-white cursor-pointer bg-orange-500 rounded-md h-10 w-10 ' />
+                </div>
+                <div className='flex h-full w-full overflow-auto items-center justify-center'>
+                    {/* <span className=' flex items-center justify-end w-full' >
+                        
+                    </span> */}
                     {props.children}
                 </div>
             </div>
@@ -26,11 +29,14 @@ export const App = () => {
 
     const PricesPopup = (props: any) => {
         return (
-            <div className='fixed max-md:w-[350px] max-md:top-[25%] max-md:left-[10%] w-[750px] h-full top-[10%] left-[15%]'>
-                <div className='relative w-[85%] m-0 h-auto max-h-[85vh] rounded-[4px] border border-solid border-[#999] overflow-auto'>
-                    <span className='cursor-pointer max-md:right-[14%] max-md:top-[26%] fixed right-[17.5%] top-[10.5%] w-[25px] h-[25px] text-white bg-orange-500 rounded-md flex items-center justify-center' onClick={() => { setShowValores(false) }}>
-                        <MdClose />
-                    </span>
+            <div className='fixed h-[80vh] w-[70vw] flex flex-col'>
+                <div className='flex w-full justify-end'>
+                    <MdClose onClick={() => { setShowValores(false) }} className='text-white cursor-pointer bg-orange-500 rounded-md h-10 w-10 ' />
+                </div>
+                <div className='flex h-full w-full overflow-auto items-center justify-center'>
+                    {/* <span className=' flex items-center justify-end w-full' >
+                        
+                    </span> */}
                     {props.children}
                 </div>
             </div>
@@ -38,9 +44,9 @@ export const App = () => {
     }
 
     return (
-        <div className="h-full min-h-screen w-screen overflow-auto">
-            <div className="bg-bgImage h-screen w-full justify-between
-            pt-32 items-center flex flex-col gap-2 max-md:px-5">
+        <div className="h-screen min-h-screen w-screen overflow-auto">
+            <div className="bg-bgImage h-full w-full justify-between
+            pt-20 items-center flex flex-col gap-2 max-md:px-5">
 
                 <div className='h-full w-full justify-start items-center flex flex-col gap-2'>
                     <div className="h-52 w-52 border-white border-2 rounded-full flex justify-center items-center">
