@@ -1,15 +1,45 @@
 import { useState } from 'react'
+import { render } from 'react-dom'
 import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs'
-import { MdLocationOn, MdMail } from 'react-icons/md'
+import { MdClose, MdLocationOn, MdMail } from 'react-icons/md'
+
 
 export const App = () => {
 
     const [showMapa, setShowMapa] = useState(false)
     const [showValores, setShowValores] = useState(false)
 
+
+
+    const MapPopup = (props: any) => {
+        return (
+            <div className='fixed max-md:w-[350px] max-md:top-[25%] max-md:left-[10%] w-[750px] h-full top-[10%] left-[15%]'>
+                <div className='relative w-[85%] m-0 h-auto max-h-[85vh] rounded-[4px] border border-solid border-[#999] overflow-auto'>
+                    <span className='cursor-pointer max-md:right-[14%] max-md:top-[26%] fixed right-[17.5%] top-[10.5%] w-[25px] h-[25px] text-white bg-orange-500 rounded-md flex items-center justify-center' onClick={() => { setShowMapa(false) }}>
+                        <MdClose />
+                    </span>
+                    {props.children}
+                </div>
+            </div>
+        )
+    }
+
+    const PricesPopup = (props: any) => {
+        return (
+            <div className='fixed max-md:w-[350px] max-md:top-[25%] max-md:left-[10%] w-[750px] h-full top-[10%] left-[15%]'>
+                <div className='relative w-[85%] m-0 h-auto max-h-[85vh] rounded-[4px] border border-solid border-[#999] overflow-auto'>
+                    <span className='cursor-pointer max-md:right-[14%] max-md:top-[26%] fixed right-[17.5%] top-[10.5%] w-[25px] h-[25px] text-white bg-orange-500 rounded-md flex items-center justify-center' onClick={() => { setShowValores(false) }}>
+                        <MdClose />
+                    </span>
+                    {props.children}
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="h-full min-h-screen w-screen overflow-auto">
-            <div className="bg-bgImage h-full w-full justify-between
+            <div className="bg-bgImage h-screen w-full justify-between
             pt-32 items-center flex flex-col gap-2 max-md:px-5">
 
                 <div className='h-full w-full justify-start items-center flex flex-col gap-2'>
@@ -35,29 +65,37 @@ export const App = () => {
                         <span className='text-white font-bold text-4xl max-md:text-2xl'>#PadrãoMR</span>
                     </div>
 
-
-                    <a href='https://contate.me/mreventosparauapebas' className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm">
-                        <span>RESERVE SEU CAMAROTE - Pai da Seresta</span>
+                    <a href='https://contate.me/mreventosparauapebas' className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
+                     via-orange-500 to-orange-300 transition-all hover:text-black">
+                        <span >RESERVE SEU CAMAROTE - Pai da Seresta</span>
                     </a>
 
-                    <a href='https://www.suamusica.com.br/milannecristina/cd-evoney-fernandes-seu-osmar-mr-eventos-at-mrparauapebas-fevereiro' className="flex bg-white p-2 rounded-lg gap-2 text-black mt-2 max-md:text-sm">
+                    <a href='https://www.suamusica.com.br/milannecristina/cd-evoney-fernandes-seu-osmar-mr-eventos-at-mrparauapebas-fevereiro' className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
+                     via-orange-500 to-orange-300 transition-all hover:text-black">
                         <span>BAIXE O CD PROMOCIONAL MR EVENTOS (Evoney Fernandes - Seu Osmar)</span>
                     </a>
 
-                    <div onClick={() => { setShowMapa(!showMapa) }} className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium mt-2">
+                    <div onClick={() => { setShowMapa(true) }} className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium  hover:bg-gradient-to-r from-orange-700 
+                     via-orange-500 to-orange-300 transition-all hover:text-black">
                         <span>MAPA SHOW SEU OSMAR #10.Março</span>
                     </div>
+                    {
+                        showMapa &&
+                        <MapPopup>
+                            <img src="Mapa-Evento.png" alt="" />
+                        </MapPopup>
+                    }
 
-                    <div className={`flex m-0 p-0 duration-300 ${showMapa ? 'h-[600px] w-[600px]' : 'h-0 w-0'}`}>
-                        <img src="Mapa-Evento.png" alt="" />
-                    </div>
-
-                    <div onClick={() => { setShowValores(!showValores) }} className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium">
+                    <div onClick={() => { setShowValores(!showValores) }} className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium hover:bg-gradient-to-r from-orange-700 
+                     via-orange-500 to-orange-300 transition-all hover:text-black">
                         <span>Valores e Pontos de vendas - Evoney Fernandes (Seu Osmar)</span>
                     </div>
-                    <div className={`flex duration-300 ${showValores ? 'h-[600px] w-[600px]' : 'h-0 w-0'}`}>
-                        <img src="valores.jpeg" alt="" />
-                    </div>
+                    {
+                        showValores &&
+                        <PricesPopup>
+                            <img src="valores.jpeg" alt="" />
+                        </PricesPopup>
+                    }
                 </div>
                 <footer className="bottom-0 text-white mb-10 flex flex-col">
                     <div className='flex gap-4 items-center justify-center'>
