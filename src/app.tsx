@@ -21,7 +21,7 @@ export const App = () => {
                             @mrparauapebas
                         </h1>
 
-                        <h1 className='max-md:text-xl text-4xl text-white flex flex-row'>
+                        <h1 className='max-md:text-2xl text-4xl text-white flex flex-row'>
                             <span className='font-bold mr-2'>
                                 Se é
                             </span>
@@ -32,7 +32,7 @@ export const App = () => {
                                 , a MR entende!
                             </span>
                         </h1>
-                        <span className='text-white font-bold text-4xl max-md:text-xl'>#PadrãoMR</span>
+                        <span className='text-white font-bold text-4xl max-md:text-2xl'>#PadrãoMR</span>
                     </div>
 
 
