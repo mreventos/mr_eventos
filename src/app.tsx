@@ -8,7 +8,7 @@ export const App = () => {
     const [showValores, setShowValores] = useState(false)
 
     return (
-        <div className="h-screen w-screen">
+        <div className="h-full min-h-screen w-screen overflow-auto">
             <div className="bg-bgImage h-full w-full justify-between
             pt-32 items-center flex flex-col gap-2 max-md:px-5">
 
