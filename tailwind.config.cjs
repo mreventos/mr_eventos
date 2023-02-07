@@ -7,7 +7,7 @@ module.exports = {
         none: 'rect(0 0 0 0)',
       },
       backgroundImage: {
-        bgImage: "url('BG.png')",
+        bgImage: "url('../bg-image.png')",
       },
       colors: {
         "dark-purple": "#081A51",
