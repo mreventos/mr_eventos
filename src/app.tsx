@@ -35,7 +35,7 @@ export const App = () => {
                 </div>
 
 
-                <a href='https://web.whatsapp.com/send/?phone=5594992791010&text=Ol%C3%A1.+Muito+bom+ter+voc%C3%AA+conosco.+At%C3%A9+ser+atendido+que+tal+deixar+uma+dica+para+nossa+pr%C3%B3xima+atra%C3%A7%C3%A3o.+Em+breve+teremos+novidades.' className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm">
+                <a href='https://contate.me/mreventosparauapebas' className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm">
                     <span>RESERVE SEU CAMAROTE - Pai da Seresta</span>
                 </a>
 
@@ -58,7 +58,7 @@ export const App = () => {
                     <img src="src/assets/valores.jpeg" alt="" />
                 </div>
 
-                <footer className="fixed bottom-0 text-white mb-10 flex flex-col">
+                <footer className="bottom-0 text-white mb-10 flex flex-col">
                     <div className='flex gap-4 items-center justify-center'>
                         <a href="https://www.instagram.com/mrparauapebas/" className='text-white'>
                             <BsInstagram size={30} />
@@ -66,7 +66,7 @@ export const App = () => {
                         <a href="https://www.facebook.com/mrparauapebas/" className='text-white'>
                             <BsFacebook size={30} />
                         </a>
-                        <a href="https://web.whatsapp.com/send/?phone=5594992791010&text=Ol%C3%A1.+Muito+bom+ter+voc%C3%AA+conosco.+At%C3%A9+ser+atendido+que+tal+deixar+uma+dica+para+nossa+pr%C3%B3xima+atra%C3%A7%C3%A3o.+Em+breve+teremos+novidades." className='text-white'>
+                        <a href="https://contate.me/mreventosparauapebas" className='text-white'>
                             <BsWhatsapp size={30} />
                         </a>
                         <a href="" className='text-white'>
