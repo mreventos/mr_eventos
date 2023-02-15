@@ -102,7 +102,7 @@ export const App = () => {
 
           <div
             className={`flex p-0 duration-300 ${
-              showMapa ? " my-4  h-[80vh] w-[80vw] md:w-[40%] " : "h-0 w-0"
+              showMapa ? " my-4  w-[80vw] md:w-[40%] " : "h-0 w-0"
             }`}
           >
             <img src="Mapa-Evento.png" alt="" />
@@ -122,7 +122,7 @@ export const App = () => {
 
           <div
             className={`flex  duration-300 ${
-              showValores ? "my-4 h-[80vh] w-[80vw] md:w-[30%]" : "h-0 w-0"
+              showValores ? "my-4 w-[80vw] md:w-[30%]" : "h-0 w-0"
             }`}
           >
             <img src="valores.jpg" alt="" />
