@@ -108,65 +108,64 @@ export const App = () => {
             <img src="Mapa-Evento.png" alt="" />
           </div>
 
-          <div
-            onClick={() => {
-              setShowValores(!showValores);
-            }}
-            className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium hover:bg-gradient-to-r from-orange-700 
+                    <div
+                        onClick={() => {
+                            setShowValores(!showValores);
+                        }}
+                        className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium hover:bg-gradient-to-r from-orange-700 
                      via-orange-500 to-orange-300 transition-all hover:text-black"
-          >
-            <span>
-              Valores e Pontos de vendas - Evoney Fernandes (Seu Osmar)
-            </span>
-          </div>
+                    >
+                        <span>
+                            Valores e Pontos de vendas - Evoney Fernandes (Seu Osmar)
+                        </span>
+                    </div>
 
-          <div
-            className={`flex  duration-300 ${
-              showValores ? "my-4 w-[80vw] md:w-[30%]" : "h-0 w-0"
-            }`}
-          >
-            <img src="valores.jpg" alt="" />
-          </div>
+                    <div
+                        className={`flex  duration-300 ${showValores ? "my-4 h-[80vh] w-[80vw] md:w-[30%]" : "h-0 w-0"
+                            }`}
+                    >
+                        <img src="valores.jpeg" alt="" />
+                    </div>
+                </div>
+                <footer className=" text-white mb-10 flex flex-col">
+                    <div className="flex gap-4 items-center justify-center">
+                        <a
+                            href="https://www.instagram.com/mrparauapebas/"
+                            className="text-white"
+                        >
+                            <BsInstagram size={30} />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/mrparauapebas/"
+                            className="text-white"
+                        >
+                            <BsFacebook size={30} />
+                        </a>
+                        <a
+                            href="https://contate.me/mreventosparauapebas"
+                            className="text-white"
+                        >
+                            <BsWhatsapp size={30} />
+                        </a>
+                        <a href="" className="text-white">
+                            <MdMail size={30} />
+                        </a>
+                        <a
+                            href="https://goo.gl/maps/5ytiWhN4FkSHCDKq5"
+                            className="text-white"
+                        >
+                            <MdLocationOn size={30} />
+                        </a>
+                    </div>
+                    <div className="w-screen px-6 flex flex-col my-2">
+                        <span>MR Eventos</span>
+                        <span>
+                            Rua 4, esquina com a rua B. Cidade Nova, Parauapebas - PA,
+                            68515000.
+                        </span>
+                    </div>
+                </footer>
+            </div>
         </div>
-        <footer className=" text-white mb-10 flex flex-col">
-          <div className="flex gap-4 items-center justify-center">
-            <a
-              href="https://www.instagram.com/mrparauapebas/"
-              className="text-white"
-            >
-              <BsInstagram size={30} />
-            </a>
-            <a
-              href="https://www.facebook.com/mrparauapebas/"
-              className="text-white"
-            >
-              <BsFacebook size={30} />
-            </a>
-            <a
-              href="https://contate.me/mreventosparauapebas"
-              className="text-white"
-            >
-              <BsWhatsapp size={30} />
-            </a>
-            <a href="" className="text-white">
-              <MdMail size={30} />
-            </a>
-            <a
-              href="https://goo.gl/maps/5ytiWhN4FkSHCDKq5"
-              className="text-white"
-            >
-              <MdLocationOn size={30} />
-            </a>
-          </div>
-          <div className="w-screen px-6 flex flex-col my-2">
-            <span>MR Eventos</span>
-            <span>
-              Rua 4, esquina com a rua B. Cidade Nova, Parauapebas - PA,
-              68515000.
-            </span>
-          </div>
-        </footer>
-      </div>
-    </div>
-  );
+    );
 };
