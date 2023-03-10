@@ -107,24 +107,7 @@ export const App = () => {
                         <img src="Mapa-Evento.png" alt="" />
                     </div>
 
-                    <div
-                        onClick={() => {
-                            setShowValores(!showValores);
-                        }}
-                        className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black"
-                    >
-                        <span>
-                            Valores e Pontos de vendas - Evoney Fernandes (Seu Osmar)
-                        </span>
-                    </div>
-
-                    <div
-                        className={`flex  duration-300 ${showValores ? "my-4 h-[80vh] w-[80vw] md:w-[30%]" : "h-0 w-0"
-                            }`}
-                    >
-                        <img src="valores.jpeg" alt="" />
-                    </div>
+               
                 </div>
                 <footer className=" text-white mb-10 flex flex-col">
                     <div className="flex gap-4 items-center justify-center">
