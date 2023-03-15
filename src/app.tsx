@@ -50,7 +50,7 @@ export const App = () => {
     //   };
 
     return (
-        <div className="bg-gradient-to-tr from-orange-800 to-black h-screen min-h-screen w-screen overflow-auto flex">
+        <div className="bg-bgImage h-screen min-h-screen w-screen overflow-auto flex">
             <div
                 className="  h-screen w-full justify-between
             pt-20 items-center flex flex-col gap-2 max-md:px-5"
@@ -77,7 +77,7 @@ export const App = () => {
                         className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
                      via-orange-500 to-orange-300 transition-all hover:text-black"
                     >
-                        <span>RESERVE SEU CAMAROTE - Pai da Seresta</span>
+                        <span>Informações e dúvidas</span>
                     </a>
 
                     <a
@@ -90,7 +90,7 @@ export const App = () => {
                         </span>
                     </a>
 
-                    <div
+                    {/* <div
                         onClick={() => {
                             setShowMapa(!showMapa);
                         }}
@@ -105,7 +105,7 @@ export const App = () => {
                             }`}
                     >
                         <img src="Mapa-Evento.png" alt="" />
-                    </div>
+                    </div> */}
 
                
                 </div>

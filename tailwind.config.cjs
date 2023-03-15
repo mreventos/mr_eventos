@@ -6,9 +6,9 @@ module.exports = {
       clip: {
         none: "rect(0 0 0 0)",
       },
-      // backgroundImage: {
-      //   bgImage: "url('../bg-image.png')",
-      // },
+      backgroundImage: {
+        bgImage: "url('../fundo.png')",
+      },
       colors: {
         "dark-purple": "#081A51",
         "light-white": "rgba(255,255,255,0.18)",
