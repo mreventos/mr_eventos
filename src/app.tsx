@@ -38,31 +38,18 @@ export const App = () => {
           </a>
 
           <a
-            href="https://www.suamusica.com.br/milannecristina/cd-evoney-fernandes-seu-osmar-mr-eventos-at-mrparauapebas-fevereiro"
-            className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
-          >
-            <span>
-              BAIXE O CD PROMOCIONAL MR EVENTOS (Evoney Fernandes - Seu Osmar)
-            </span>
-          </a>
-          <a
             href="https://www.guicheweb.com.br/henrique-e-juliano-parauapebas_23145"
             className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
                      via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
           >
-            <span>
-              Ingresso on-line Henrique & Juliano
-            </span>
+            <span>Ingresso on-line Henrique & Juliano</span>
           </a>
           <a
             href="https://drive.google.com/file/d/1_mnDrezts-i3trXRoyx3Lpj27NK2nRKU/view?usp=sharing"
             className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
                      via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
           >
-            <span>
-            Seja um Patrocinador Henrique & Juliano
-            </span>
+            <span>Seja um Patrocinador Henrique & Juliano</span>
           </a>
 
           <div
