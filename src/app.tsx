@@ -51,6 +51,13 @@ export const App = () => {
           >
             <span>Seja um Patrocinador Henrique & Juliano</span>
           </a>
+          <a
+            href="https://www.suamusica.com.br/milannecristina/cd-promocional-henrique-e-juliano-mr-eventos-2023"
+            className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
+                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
+          >
+            <span>BAIXE O CD HENRIQUE & JULIANO - MR EVENTOS</span>
+          </a>
 
           <div
             onClick={() => {
