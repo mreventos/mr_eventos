@@ -41,7 +41,7 @@ const ExpansibleBanner = ({ text, link }: ExpansibleBannerProps) => {
 
       <div
         className={`flex p-0 duration-300 ${
-          showMapa ? " my-4  w-[80vw] md:w-[40%] " : "h-0 w-0"
+          showMapa ? " my-4  w-[80vw] md:w-[80%] " : "h-0 w-0"
         }`}
       >
         <img src={link} alt="" />
@@ -73,18 +73,18 @@ export const App = () => {
               #PadrãoMR
             </span>
           </div>
-          <ExpansibleBanner text="Mapa FAP 2023" link="" />
+          <ExpansibleBanner text="Mapa FAP 2023" link="mapa-fap.jpeg" />
           <ExpansibleBanner text="Pontos de vendas físicos" link="" />
           <LinkButton
-            link="https://contate.me/mreventosparauapebas"
+            link="https://quero2ingressos.com.br/events/fap-2023-jorge-mateus"
             text="ingresso on-line Jorge e Mateus"
           />
           <LinkButton
-            link="https://contate.me/mreventosparauapebas"
+            link="https://quero2ingressos.com.br/events/fap-2023-hugo-guilherme"
             text="Ingresso on-line Hugo e Guilherme"
           />
           <LinkButton
-            link="https://contate.me/mreventosparauapebas"
+            link="https://quero2ingressos.com.br/events/fap-2023-passaporte-social"
             text="ingresso on-line passaporte social (2 Shows)"
           />
           <LinkButton
@@ -92,7 +92,7 @@ export const App = () => {
             text="Saiba tudo sobre o seu passaporte social"
           />
           <LinkButton
-            link="https://contate.me/mreventosparauapebas"
+            link="https://drive.google.com/file/d/1HHvuyz9dVe6YHbAyQG4NJ8W1C32ME-eU/view"
             text="Autorização menores 16 anos à 18 anos"
           />
           <LinkButton
