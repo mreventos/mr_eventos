@@ -88,7 +88,7 @@ export const App = () => {
             text="ingresso on-line passaporte social (2 Shows)"
           />
           <LinkButton
-            link="https://contate.me/mreventosparauapebas"
+            link="https://drive.google.com/file/d/1nVUtYlkTQyu3qLX2vINYkGPJi5w2-Cjl/view"
             text="Saiba tudo sobre o seu passaporte social"
           />
           <LinkButton
