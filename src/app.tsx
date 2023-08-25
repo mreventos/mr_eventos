@@ -105,7 +105,7 @@ export const App = () => {
           />
           <LinkButton
             link="https://contate.me/mreventosparauapebas"
-            text="Baixe o cd MR eventos FAP 2023"
+            text="Baixe o CD MR eventos FAP 2023"
           />
         </div>
         <footer className=" text-white mb-10 flex flex-col">
