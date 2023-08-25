@@ -3,9 +3,54 @@ import { render } from "react-dom";
 import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { MdClose, MdLocationOn, MdMail } from "react-icons/md";
 
-export const App = () => {
-  const [showMapa, setShowMapa] = useState(false);
+interface LinkButtonProps {
+  text: string;
+  link: string;
+}
 
+const LinkButton = ({ text, link }: LinkButtonProps) => {
+  return (
+    <a
+      href={link}
+      className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
+             via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
+    >
+      <span>{text}</span>
+    </a>
+  );
+};
+
+interface ExpansibleBannerProps {
+  text: string;
+  link: string;
+}
+
+const ExpansibleBanner = ({ text, link }: ExpansibleBannerProps) => {
+  const [showMapa, setShowMapa] = useState(false);
+  return (
+    <>
+      <div
+        onClick={() => {
+          setShowMapa(!showMapa);
+        }}
+        className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium  hover:bg-gradient-to-r from-orange-700 
+                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
+      >
+        <span>{text}</span>
+      </div>
+
+      <div
+        className={`flex p-0 duration-300 ${
+          showMapa ? " my-4  w-[80vw] md:w-[40%] " : "h-0 w-0"
+        }`}
+      >
+        <img src={link} alt="" />
+      </div>
+    </>
+  );
+};
+
+export const App = () => {
   return (
     <div className="bg-bgImage h-screen min-h-screen w-screen overflow-auto flex">
       <div
@@ -28,71 +73,40 @@ export const App = () => {
               #PadrãoMR
             </span>
           </div>
-
-          <a
-            href="https://contate.me/mreventosparauapebas"
-            className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black"
-          >
-            <span>Reserve o seu Camarote Lounge - Seu Perfil</span>
-          </a>
-
-          <a
-            href="https://www.guicheweb.com.br/henrique-e-juliano-parauapebas_23145"
-            className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
-          >
-            <span>Ingresso on-line Henrique & Juliano</span>
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1_mnDrezts-i3trXRoyx3Lpj27NK2nRKU/view?usp=sharing"
-            className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
-          >
-            <span>Seja um Patrocinador Henrique & Juliano</span>
-          </a>
-          <a
-            href="https://www.suamusica.com.br/milannecristina/cd-promocional-henrique-e-juliano-mr-eventos-2023"
-            className="flex bg-white p-2 rounded-lg gap-2 text-black max-md:text-sm hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
-          >
-            <span>BAIXE O CD HENRIQUE & JULIANO - MR EVENTOS</span>
-          </a>
-
-          <div
-            onClick={() => {
-              setShowMapa(!showMapa);
-            }}
-            className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium  hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
-          >
-            <span>Mapa completo Henrique & Juliano</span>
-          </div>
-
-          <div
-            className={`flex p-0 duration-300 ${
-              showMapa ? " my-4  w-[80vw] md:w-[40%] " : "h-0 w-0"
-            }`}
-          >
-            <img src="mapa-3d.png" alt="" />
-          </div>
-          {/* <div
-            onClick={() => {
-              setShowMapa(!showMapa);
-            }}
-            className="flex bg-white p-2 rounded-lg gap-2 text-black cursor-pointer font-medium  hover:bg-gradient-to-r from-orange-700 
-                     via-orange-500 to-orange-300 transition-all hover:text-black mt-2"
-          >
-            <span>MAPA SHOW SEU OSMAR #10.Março</span>
-          </div>
-
-          <div
-            className={`flex p-0 duration-300 ${
-              showMapa ? " my-4  w-[80vw] md:w-[40%] " : "h-0 w-0"
-            }`}
-          >
-            <img src="Mapa-Evento.png" alt="" />
-          </div> */}
+          <ExpansibleBanner text="Mapa FAP 2023" link="" />
+          <ExpansibleBanner text="Pontos de vendas físicos" link="" />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="ingresso on-line Jorge e Mateus"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="Ingresso on-line Hugo e Guilherme"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="ingresso on-line passaporte social (2 Shows)"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="Saiba tudo sobre o seu passaporte social"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="Autorização menores 16 anos à 18 anos"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="Compre seu camarote para FAP 2023"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="Seja um patrocinador FAP 2023"
+          />
+          <LinkButton
+            link="https://contate.me/mreventosparauapebas"
+            text="Baixe o cd MR eventos FAP 2023"
+          />
         </div>
         <footer className=" text-white mb-10 flex flex-col">
           <div className="flex gap-4 items-center justify-center">
