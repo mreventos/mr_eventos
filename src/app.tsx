@@ -76,15 +76,15 @@ export const App = () => {
           <ExpansibleBanner text="Mapa FAP 2023" link="mapa-fap.jpeg" />
           <ExpansibleBanner text="Pontos de vendas físicos" link="" />
           <LinkButton
-            link="https://quero2ingressos.com.br/events/fap-2023-jorge-mateus"
+            link="https://quero2ingressos.com.br/resultados?s=fap%202023"
             text="ingresso on-line Jorge e Mateus"
           />
           <LinkButton
-            link="https://quero2ingressos.com.br/events/fap-2023-hugo-guilherme"
+            link="https://quero2ingressos.com.br/resultados?s=fap%202023"
             text="Ingresso on-line Hugo e Guilherme"
           />
           <LinkButton
-            link="https://quero2ingressos.com.br/events/fap-2023-passaporte-social"
+            link="https://quero2ingressos.com.br/resultados?s=fap%202023"
             text="ingresso on-line passaporte social (2 Shows)"
           />
           <LinkButton
