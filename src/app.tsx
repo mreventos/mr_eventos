@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { render } from "react-dom";
-import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
-import { MdClose, MdLocationOn, MdMail } from "react-icons/md";
+import { useState } from 'react';
+import { render } from 'react-dom';
+import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { MdClose, MdLocationOn, MdMail } from 'react-icons/md';
 
 interface LinkButtonProps {
   text: string;
@@ -41,7 +41,7 @@ const ExpansibleBanner = ({ text, link }: ExpansibleBannerProps) => {
 
       <div
         className={`flex p-0 duration-300 ${
-          showMapa ? " my-4  w-[80vw] md:w-[80%] " : "h-0 w-0"
+          showMapa ? ' my-4  w-[80vw] md:w-[80%] ' : 'h-0 w-0'
         }`}
       >
         <img src={link} alt="" />
@@ -59,7 +59,7 @@ export const App = () => {
       >
         <div className=" w-full justify-start items-center flex flex-col gap-2">
           <div className="h-52 w-52 border-white border-2 rounded-full flex justify-center items-center">
-            <img src={"logo-transparent.png"} alt="" />
+            <img src={'logo-transparent.png'} alt="" />
           </div>
           <div className="flex flex-col justify-center items-center my-4 gap-2">
             <h1 className="text-white font-bold text-2xl">@mrparauapebas</h1>
@@ -73,23 +73,22 @@ export const App = () => {
               #PadrãoMR
             </span>
           </div>
-          <ExpansibleBanner text="Mapa FAP 2023" link="mapa-fap.jpeg" />
-          <ExpansibleBanner text="Pontos de vendas físicos" link="" />
-          <LinkButton
-            link="https://quero2ingressos.com.br/resultados?s=fap%202023"
-            text="ingresso on-line Jorge e Mateus"
+          <ExpansibleBanner text="Mapa FAP 2024" link="MAPA A4.jpg" />
+          <ExpansibleBanner
+            text="Pontos de vendas físicos"
+            link="PONTOS A4.jpg"
           />
           <LinkButton
-            link="https://quero2ingressos.com.br/resultados?s=fap%202023"
-            text="Ingresso on-line Hugo e Guilherme"
+            link="https://baladapp.com.br/evento/feira-agropecuaria-de-parauapebas-fap/5530"
+            text="Ingresso on-line Nattan"
           />
           <LinkButton
-            link="https://quero2ingressos.com.br/resultados?s=fap%202023"
-            text="ingresso on-line passaporte social (2 Shows)"
+            link="https://baladapp.com.br/evento/feira-agropecuaria-de-parauapebas-fap/5530"
+            text="Ingresso on-line Gusttavo Lima"
           />
           <LinkButton
-            link="https://drive.google.com/file/d/1nVUtYlkTQyu3qLX2vINYkGPJi5w2-Cjl/view"
-            text="Saiba tudo sobre o seu passaporte social"
+            link="https://baladapp.com.br/evento/feira-agropecuaria-de-parauapebas-fap/5530"
+            text="Ingresso on-line passaporte social"
           />
           <LinkButton
             link="https://drive.google.com/file/d/1HHvuyz9dVe6YHbAyQG4NJ8W1C32ME-eU/view"
@@ -97,15 +96,7 @@ export const App = () => {
           />
           <LinkButton
             link="https://contate.me/mreventosparauapebas"
-            text="Compre seu camarote para FAP 2023"
-          />
-          <LinkButton
-            link="https://contate.me/mreventosparauapebas"
-            text="Seja um patrocinador FAP 2023"
-          />
-          <LinkButton
-            link="https://contate.me/mreventosparauapebas"
-            text="Baixe o CD MR eventos FAP 2023"
+            text="Compre seu camarote para FAP 2024"
           />
         </div>
         <footer className=" text-white mb-10 flex flex-col">
