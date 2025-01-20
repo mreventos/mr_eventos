@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { render } from 'react-dom';
 import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
-import { MdClose, MdLocationOn, MdMail } from 'react-icons/md';
+import { MdLocationOn, MdMail } from 'react-icons/md';
 
 interface LinkButtonProps {
   text: string;
