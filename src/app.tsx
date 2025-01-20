@@ -40,7 +40,7 @@ const ExpansibleBanner = ({ text, link }: ExpansibleBannerProps) => {
       </div>
 
       <div
-        className={`flex p-0 duration-300 ${
+        className={`flex p-0 duration-300 justify-center ${
           showMapa ? ' my-4  w-[80vw] md:w-[80%] ' : 'h-0 w-0'
         }`}
       >
@@ -73,22 +73,17 @@ export const App = () => {
               #PadrãoMR
             </span>
           </div>
-          <ExpansibleBanner text="Mapa FAP 2024" link="MAPA A4.jpg" />
+          <ExpansibleBanner
+            text="Mapa Divas do Pará (Joelma, Fruto Sensual e Zaynara)"
+            link="mapa.jpeg"
+          />
           <ExpansibleBanner
             text="Pontos de vendas físicos"
-            link="PONTOS A4.jpg"
+            link="pontos_de_venda.jpeg"
           />
           <LinkButton
-            link="https://baladapp.com.br/evento/feira-agropecuaria-de-parauapebas-fap/5530"
-            text="Ingresso on-line Nattan"
-          />
-          <LinkButton
-            link="https://baladapp.com.br/evento/feira-agropecuaria-de-parauapebas-fap/5530"
-            text="Ingresso on-line Gusttavo Lima"
-          />
-          <LinkButton
-            link="https://baladapp.com.br/evento/feira-agropecuaria-de-parauapebas-fap/5530"
-            text="Ingresso on-line passaporte social"
+            link="https://www.stingressos.com.br/eventos/festival-divas-do-para-parauapebas"
+            text="Ingressso On-line Divas do Pará (Joelma, Fruto Sensual e Zaynara)"
           />
           <LinkButton
             link="https://drive.google.com/file/d/1HHvuyz9dVe6YHbAyQG4NJ8W1C32ME-eU/view"
@@ -96,7 +91,7 @@ export const App = () => {
           />
           <LinkButton
             link="https://contate.me/mreventosparauapebas"
-            text="Compre seu camarote para FAP 2024"
+            text="Compre seu Lounge Camarote Divas do Pará (Joelma, Fruto Sensual e Zaynara)"
           />
         </div>
         <footer className=" text-white mb-10 flex flex-col">
